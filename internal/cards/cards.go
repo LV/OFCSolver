@@ -1,5 +1,7 @@
 package cards
 
+type Card = int
+
 const CardsPerSuit int = 13
 const TotalCards int = 54
 
