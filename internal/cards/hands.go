@@ -1,5 +1,22 @@
 package cards
 
+type ThreeCardHand = [3]Card
+type FiveCardHand  = [5]Card
+
+type HandStrength int
+const (
+	HighCard HandStrength = iota
+	Pair
+	TwoPair
+	ThreeOfAKind
+	Straight
+	Flush
+	FullHouse
+	FourOfAKind
+	StraightFlush
+	RoyalFlush
+)
+
 type FontHandBonus int
 const (
 	FHNone        = 0
